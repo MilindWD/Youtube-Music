@@ -1,0 +1,293 @@
+body,html{
+    background-color: #ECF0F3;
+    padding: 0;
+    margin: 0;
+}
+
+.search-wrap{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 99px;
+    margin-top: 3vmin;
+    overflow: hidden;
+    background-color: transparent;
+    box-shadow: 0.5vmin 0.5vmin 1.5vmin #bfc7d1,-0.5vmin -0.5vmin 1vmin #fff;
+    margin-left: calc((100vw - 35.5vmin)/2);
+}
+
+.search-icon{
+    z-index: 1;
+    height: 4vmin;
+    float: left;
+    border-radius: 50%;
+    margin-right: 0.1vmin;
+    box-shadow: 0.5vmin 0.5vmin 1vmin #bfc7d1,-0.5vmin 0 1vmin #fff;
+}
+
+.search-icon:active{
+    box-shadow: inset 0.5vmin 0.5vmin 1vmin #bfc7d1,inset -0.5vmin 0 1vmin #fff;
+}
+
+.search-box{
+    z-index: 2;
+    outline: none;
+    fill-opacity: 0;
+    height: 4vmin;
+    border: none;
+    padding: 0;
+    float: left;
+    width: 30vmin;
+    padding-left: 2vmin;
+    background-color: transparent;
+    caret-color: #707070;
+    color: #707070;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vmin;
+    font-weight: 700;
+    position: relative;
+}
+
+.music-thumbnail{
+    width: 30vmin;
+    height: 30vmin;
+    border-radius: 15vmin;
+    box-shadow: 15px 15px 25px #bfc7d1,-15px -15px 25px #fff;
+    line-height: 20vmin;
+    text-align: center;
+    margin-top: 7vmin;
+    margin-left: calc(50vw - 15vmin);
+    overflow: hidden;
+    display: inline-block;
+}
+
+.music-thumbnail--img-wrap{
+    overflow: hidden;
+    width: 29vmin;
+    height: 29vmin;
+    border-radius: 14.5vmin;
+    transition: all 1s ease;
+    background-size: cover;
+    background-position: center;
+    transform: translate(0.5vmin,0.5vmin);
+}
+
+.song{
+    height: 29vmin;
+    background-position: center;
+    transform: translateX(-8.5vmin);
+}
+
+.control{
+    width: 42vmin;
+    height: 10vmin;
+    margin-top: 2vmin;
+    margin-left: calc((100vw - 42vmin)/2);
+    display: inline-block;
+}
+
+.control-button{
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 4vmin;
+    margin-left: 5vmin;
+    margin-top: 3vmin;
+    box-shadow: 5px 5px 10px #bfc7d1,-5px -5px 10px #fff;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.control-button:active{
+    box-shadow: inset 5px 5px 10px #bfc7d1,inset -5px -5px 10px #fff;
+}
+
+.play-icon,.forward-icon,.back-icon{
+    width: 8vmin;
+    transform: translateX(0.5vmin);
+}
+
+
+.song-info{
+    width: 20%;
+    margin-left: 40%;
+    text-align: center;
+    margin-top: 3vmin;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2vmin;
+    color: #ffffff;
+    display: inline-block;
+    -webkit-text-fill-color: radial-gradient(circle, rgba(207,56,121,1) 26%, rgba(82,16,214,1) 76%);
+}
+
+.song-info--title{
+    line-height: 5vmin;
+    font-weight: 700;
+    font-size: 2vmin;
+    color: #8b8b8b;
+    /* background: -webkit-radial-gradient(circle, rgba(207,56,121,1) 4%, rgba(82,16,214,1) 76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.q-wrapper{
+    width: 30vw;
+    height: 94vh;
+    margin: 3vmin 3vmin 3vmin 68vw ;
+    position: absolute;
+    border-radius: 5vmin;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.q-songs-wrapper{
+    width: 90%;
+    margin-left: 5%;
+    height: 88.5vh;
+    overflow-y: scroll;
+}
+
+.q-songs-wrapper .q-song:hover .q-song-thumb {
+    background: url('https://i.imgur.com/JAlOEIf.png') center / cover, #ECF0F3 !important;
+}
+
+::-webkit-scrollbar {
+    width: 0.2vw;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #888;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.q-wrapper:hover{
+    box-shadow: 5px 5px 20px #bfc7d1,-10px -10px 20px #fff;
+}
+
+.q-playlist{
+    height: 4vh;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2vh;
+    border-bottom: #8d8d8d 1px solid;
+    /* box-shadow: 1vmin 1vmin 3vmin #bfc7d1,-1vmin -1vmin 3vmin #fff; */
+}
+
+.q-playlist-head{
+    line-height: 4vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 2vmin;
+    color: #707070;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+.q-song{
+    height: 5vh;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 2.5vh;
+    transition: all 0.5s ease;
+    margin-top: 1.5vh;
+    font-size: 1.5vh;
+}
+
+.q-song:hover{
+    background-color: rgba(0, 0, 0, 0.062);
+    font-size: 1.7vh;
+}
+
+.q-song-thumb{
+    height: 5vh;
+    width: 5vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    box-shadow: 3px 3px 10px #666d70,-5px -5px 10px #fff;
+    display: inline-block;
+}
+
+.q-song-thumb:hover{
+    border: 10px rgba(0, 0, 0, 0.726)olid;
+    transform: scale(1.2);
+}
+
+.q-song-title{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #707070;
+    transform: translate(0,-2vh);
+    
+    line-height: 5vh;
+    text-align: center;
+    margin-left: 2vh;
+    height: 100%;
+}
+
+
+input[type="range" i]{
+    margin-left: 14%;
+    width: 75%;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    height: 1vmin;
+    
+}
+
+@keyframes search-hover{
+    0%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: #bfc7d1;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+    .q-wrapper{
+        display: block;
+        margin: auto;
+        margin-top: 50vh;
+        float: right;
+        width: 100%;
+    }
+    .song-info{
+        width: 40%;
+        margin-left: 30%;
+    }
+    .q-song{
+        font-size: 1vh;
+    }
+}
+
+#play-back{
+    margin-left: 3.4vmin;
+}
+
+
+.control-time{
+    position: absolute;
+    width: 20vw;
+    border-radius: 999px;
+    overflow: hidden;
+    transform: translateY(-4vh);
+}
+
+.song-control{
+    width: 28vw;
+    outline: none;
+    transform: translateX(-22%);
+}
